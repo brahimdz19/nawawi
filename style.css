@@ -1,0 +1,106 @@
+/* style.css */
+
+body {
+    font-family: 'Almarai', Tahoma, Arial, sans-serif; /* إذا تم تحميل الخط */
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+}
+
+header {
+    background-color: #00796b; /* لون أخضر/زمردي داكن */
+    color: white;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #00796b;
+    border-bottom: 3px solid #00796b;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+/* تصميم قائمة المزايا */
+#features ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#features li {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 45%;
+    text-align: right;
+    border-right: 5px solid #004d40;
+}
+
+/* تصميم زر التحميل */
+.download-button {
+    display: inline-block;
+    background-color: #ffb300; /* لون كهرماني جذاب */
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.download-button:hover {
+    background-color: #ff9800;
+    transform: translateY(-2px);
+}
+
+.note {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #aaa;
+    padding: 15px 20px;
+    margin-top: 40px;
+}
+
+/* تصميم متجاوب (للهواتف الصغيرة) */
+@media (max-width: 600px) {
+    #features li {
+        width: 90%;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    .download-button {
+        font-size: 1.2em;
+        padding: 12px 25px;
+    }
+}
